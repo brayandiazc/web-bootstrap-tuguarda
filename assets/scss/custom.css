@@ -10928,11 +10928,11 @@ body {
 }
 
 .card-background-signin {
-  background-image: url("/assets/img/login/sign_in.jpg");
+  background-image: url("assets/img/login/sign_in.jpg");
   background-size: cover;
 }
 
 .card-background-signup {
-  background-image: url("/assets/img/login/sign_up.jpg");
+  background-image: url("assets/img/login/sign_up.jpg");
   background-size: cover;
 }/*# sourceMappingURL=custom.css.map */
