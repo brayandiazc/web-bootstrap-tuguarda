@@ -1,0 +1,16 @@
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// 1. Patron de colores
+$principal: #1C529F;
+$secundario: #226DB5;
+$fondo: #E5E5E5;
+$texto-title: #363638;
+$texto-body: #757575;
+
+// 2. Modificacion de variables
+$primary: $principal;
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "_layout";
