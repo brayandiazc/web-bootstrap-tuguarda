@@ -10925,4 +10925,14 @@ textarea.form-control-lg {
 body {
   background-color: #E5E5E5;
   font-family: "Nunito", sans-serif;
+}
+
+.card-background-signin {
+  background-image: url("/assets/img/login/Inicio_Sesión.jpg");
+  background-size: cover;
+}
+
+.card-background-signup {
+  background-image: url("/assets/img/login/Registro.jpg");
+  background-size: cover;
 }/*# sourceMappingURL=custom.css.map */
