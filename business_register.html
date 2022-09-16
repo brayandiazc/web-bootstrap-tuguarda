@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crear oferta | TuGuarda</title>
+  <title>Registro de empresa | TuGuarda</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
   <link rel="stylesheet" href="assets/scss/custom.css" />
 </head>
@@ -16,35 +16,43 @@
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-10 col-md-6-xl-10">
           <div class="content d-flex justify-content-center align-items-center">
-            <h1 class="">Crear una oferta</h1>
+            <h1 class="">Registra tu empresa para publicar ofertas</h1>
           </div>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Perfil de empresa</a></li>
-              <li class="breadcrumb-item"><a href="#">Ofertas laborales</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Nueva oferta laboral</li>
+              <li class="breadcrumb-item active" aria-current="page">Registro de empresa</li>
             </ol>
           </nav>
           <div class="card mb-3">
             <div class="card-body">
               <article>
-                <h2 class="">Información basica</h2>
+                <h2 class="">Información de la empresa</h2>
               </article>
               <form>
-                <div class="mb-3">
-                  <label for="name_job" class="form-label">Nombre de la oferta</label>
-                  <input type="text" class="form-control" id="name_job" aria-describedby="namelHelp">
-                  <div id="namelHelp" class="form-text">El nombre deberia ser descriptivo.</div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="business_name" class="form-label">Nombre de la empresa</label>
+                      <input type="text" class="form-control" id="business_name" presence="true">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="nit" class="form-label">Nit</label>
+                      <input type="integer" class="form-control" id="nit" presence="true">
+                    </div>
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="description_job" class="form-label">Descripción de la oferta</label>
-                  <textarea class="form-control" id="description_job" rows="5"></textarea>
+                  <label for="description_business" class="form-label">Descripción corta de la empresa</label>
+                  <textarea class="form-control" id="description_business" rows="5"></textarea>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="type_job" class="form-label">Tipo de contrato</label>
-                      <select class="form-select" aria-label="Default select example" id="type_job">
+                      <label for="business_type" class="form-label">Tipo de empresa</label>
+                      <select class="form-select" aria-label="Default select example" id="business_type">
                         <option selected>Selecciona una opción</option>
                         <option value="1">Opcion 1</option>
                         <option value="2">Opcion 2</option>
@@ -54,8 +62,8 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="salary_type_job" class="form-label">Jornada laboral</label>
-                      <select class="form-select" aria-label="Default select example" id="salary_type_job">
+                      <label for="department" class="form-label">Pais</label>
+                      <select class="form-select" aria-label="Default select example" id="department">
                         <option selected>Selecciona una opción</option>
                         <option value="1">Opcion 1</option>
                         <option value="2">Opcion 2</option>
@@ -67,19 +75,58 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="budget" class="form-label">Salario</label>
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">$</span>
-                        <input type="text" class="form-control" aria-label="Amount (Peso col-md-6ombiano)">
-                        <span class="input-group-text">.00</span>
-                      </div>
+                      <label for="department" class="form-label">Departamento</label>
+                      <select class="form-select" aria-label="Default select example" id="department">
+                        <option selected>Selecciona una opción</option>
+                        <option value="1">Opcion 1</option>
+                        <option value="2">Opcion 2</option>
+                        <option value="3">Opcion 3</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="cantidad_vacantes" class="form-label">Cantidad de vacantes</label>
-                      <input type="integer" class="form-control" id="cantidad_vacantes">
+                      <label for="city" class="form-label">Ciudad</label>
+                      <select class="form-select" aria-label="Default select example" id="city">
+                        <option selected>Selecciona una opción</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                      </select>
                     </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="address" class="form-label">Dirección</label>
+                      <input type="text" class="form-control" id="address" presence="true">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Telefono</label>
+                      <input type="integer" class="form-control" id="phone">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="email" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="email" presence="true">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="web" class="form-label">Sitio web</label>
+                      <input type="text" class="form-control" id="web" presence="true">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="logo" class="form-label">Logo</label>
+                    <input class="form-control" type="file" id="logo">
                   </div>
                 </div>
               </form>
@@ -88,93 +135,38 @@
           <div class="card mb-3">
             <div class="card-body">
               <article>
-                <h2 class="">Requisitos</h2>
+                <h2 class="">Infrmación del representante legal</h2>
               </article>
               <form>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="education_level" class="form-label">Nivel de educación</label>
-                      <select class="form-select" aria-label="Default select example" id="education_level">
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Opcion 1</option>
-                        <option value="2">Opcion 2</option>
-                        <option value="3">Opcion 3</option>
-                      </select>
+                      <label for="name" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="name" presence="true">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="study" class="form-label">Estudios</label>
-                      <select class="form-select" aria-label="Default select example" id="study">
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Opcion 1</option>
-                        <option value="2">Opcion 2</option>
-                        <option value="3">Opcion 3</option>
-                      </select>
+                      <label for="position" class="form-label">Cargo</label>
+                      <input type="text" class="form-control" id="position" presence="true">
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="experience" class="form-label">Experienciencia</label>
-                      <select class="form-select" aria-label="Default select example" id="experience">
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Opcion 1</option>
-                        <option value="2">Opcion 2</option>
-                        <option value="3">Opcion 3</option>
-                      </select>
+                      <label for="email" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="email" presence="true">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-3">
-                      <label for="key_words" class="form-label">Palabras claves</label>
-                      <input type="text" class="form-control" id="key_words">
+                      <label for="phone" class="form-label">Telefono</label>
+                      <input type="integer" class="form-control" id="phone">
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="ages" class="form-label">Edad</label>
-                      <input type="integer" class="form-control" id="ages">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="gender" class="form-label">Genero</label>
-                      <select class="form-select" aria-label="Default select example" id="gender">
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Opcion 1</option>
-                        <option value="2">Opcion 2</option>
-                        <option value="3">Opcion 3</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="travel" class="form-label">Disponibilidad para viajar</label>
-                      <select class="form-select" aria-label="Default select example" id="travel">
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Si</option>
-                        <option value="2">No</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="relocation" class="form-label">Disponibilidad para cambiar de residencia</label>
-                      <select class="form-select" aria-label="Default select example" id="relocation">
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Si</option>
-                        <option value="2">No</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+
               </form>
             </div>
           </div>
@@ -219,37 +211,10 @@
               </form>
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <article>
-                <h2 class="">Información basica</h2>
-              </article>
-              <form>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="published" class="form-label">Fecha de publicación</label>
-                      <input type="date" class="form-control" id="published">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="vigencia" class="form-label">Vigencia de la oferta</label>
-                      <select class="form-select" aria-label="Default select example" id="vigencia">
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Opcion 1</option>
-                        <option value="2">Opcion 2</option>
-                        <option value="3">Opcion 3</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+
           <div class="d-grid gap-2">
             <button class="btn btn-primary" type="button">
-              Publicar oferta
+              Guardar Información
             </button>
           </div>
         </div>
