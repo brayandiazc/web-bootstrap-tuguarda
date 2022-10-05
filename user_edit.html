@@ -11,13 +11,34 @@
 </head>
 
 <body>
-  <section class="">
+  <!-- Header Start -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/Logo_Horizontal_LetraNegra.svg" alt="Logo TuGuarda" height="52">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <div class="d-flex text-end">
+          <a href="sign_in.html" type="button" class="btn btn-outline-primary me-2">Inicia sesión</a>
+          <a href="sign_up.html" type="button" class="btn btn-primary">Registrate</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Header End -->
+  <section class="container py-5 h-100">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-10 col-md-6-xl-10">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="user_profile.html">Mi perfil</a></li>
+              <li class="breadcrumb-item"><a href="user_show.html">Mi perfil</a></li>
               <li class="breadcrumb-item active" aria-current="page">Editar perfil</li>
             </ol>
           </nav>
@@ -32,7 +53,7 @@
                   <input type="text" class="form-control" id="user_name" aria-describedby="namelHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="bio" class="form-label">Acerca de</label>
+                  <label for="bio" class="form-label">Acerca de mi</label>
                   <textarea class="form-control" id="bio" rows="3"></textarea>
                 </div>
                 <div class="row">
@@ -123,6 +144,10 @@
                     </div>
                   </div>
                 </div>
+                <div class="mb-3">
+                  <label for="bio" class="form-label">Descripción del cargo</label>
+                  <textarea class="form-control" id="bio" rows="3"></textarea>
+                </div>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-3">
@@ -186,6 +211,10 @@
                       <input type="text" class="form-control" id="degree" aria-describedby="namelHelp">
                     </div>
                   </div>
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label">Descripción</label>
+                  <textarea class="form-control" id="description" rows="3"></textarea>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
